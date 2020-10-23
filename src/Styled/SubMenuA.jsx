@@ -22,5 +22,6 @@ export const SubMenuA = styled(Link)`
     text-transform: uppercase;
     transition: color 650ms;
     text-decoration:none;
+
     }
 `;

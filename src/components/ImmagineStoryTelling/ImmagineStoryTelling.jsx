@@ -1,11 +1,14 @@
 import React from 'react';
-import StoryTelling from '../../assets/storytelling.webp';
+import './ImmagineStoryTelling.css';
 
-
-const ImmagineStoryTelling = () => (
-    <div className="container">
-	    <img src={StoryTelling} alt="Storytelling" loading="eager"/>
-	</div>
-);
+function ImmagineStoryTelling() {
+    return (
+        <div className='storytelling-contenitore'>
+            <h1>Storytelling</h1>
+            <h4>A coherent narrative that wins the heart of the audience</h4>
+        </div>
+    );
+}
 
 export default ImmagineStoryTelling;
+

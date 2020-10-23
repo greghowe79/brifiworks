@@ -3,53 +3,44 @@ import { NavList } from '../Styled/NavList';
 import { NavListLi } from '../Styled/NavListLi';
 import { SubMenuLi } from '../Styled/SubMenuLi';
 import { NavListA } from '../Styled/NavListA';
+import   './Articles.styles.scss';
 import { SubMenu } from '../Styled/SubMenu';
 import { SubMenuA } from '../Styled/SubMenuA';
 
 
 
-const RightNav = ({ open }) => {
+
+const RightNav = ({ open, setOpen }) => {
     return (
         <NavList open={open}>
         <NavListLi>
-            <NavListA to='/competencies'>Competencies.</NavListA>
+            <NavListA to='/competencies' onClick={() => setOpen(!open)}>Competencies</NavListA>
             <SubMenu className="SubMenu">
                 <SubMenuLi>
-                    <SubMenuA to='/competencies/content-strategy'>Content Strategy</SubMenuA> 
+                    <SubMenuA to='/competencies/content-strategy' onClick={() => setOpen(!open)}>Content Strategy</SubMenuA> 
                 </SubMenuLi>
                 <SubMenuLi>
-                    <SubMenuA to='/competencies/storytelling'>Storytelling</SubMenuA> 
+                    <SubMenuA to='/competencies/storytelling' onClick={() => setOpen(!open)}>Storytelling</SubMenuA> 
                 </SubMenuLi>
                 <SubMenuLi>
-                    <SubMenuA to='/competencies/marketing'>marketing</SubMenuA> 
+                    <SubMenuA to='/competencies/marketing' onClick={() => setOpen(!open)}>marketing</SubMenuA> 
                 </SubMenuLi>
             </SubMenu>
         </NavListLi>
         <NavListLi>
-            <NavListA to='/clients-we-love'>Clients We Love.</NavListA>
+            <NavListA to='/clients-we-love' onClick={() => setOpen(!open)}>Clients We Love</NavListA>
         </NavListLi>
         <NavListLi>
-            <NavListA to='/values'>Values.</NavListA>
-            <SubMenu className="SubMenu">
-                <SubMenuLi>
-                    <SubMenuA to='/values/authenticity'>Authenticity</SubMenuA> 
-                </SubMenuLi>
-                <SubMenuLi>
-                    <SubMenuA to='/values/integrity'>Integrity</SubMenuA> 
-                </SubMenuLi>
-                <SubMenuLi>
-                    <SubMenuA to='/values/togetherness'>Togetherness</SubMenuA> 
-                </SubMenuLi>
-            </SubMenu>
+            <NavListA to='/values' onClick={() => setOpen(!open)}>Values</NavListA>
         </NavListLi>
         <NavListLi>
-            <NavListA to='/articles'>Articles.</NavListA>
+        <a className='articles' href='https://www.linkedin.com/pulse/5-reasons-why-storytelling-crucial-success-businesses-claudia-mosca/?trackingId=yAIiVnS1URuRdeemJj0PuQ%3D%3D' rel="noopener noreferrer">Articles</a>
         </NavListLi>
         <NavListLi>
-            <NavListA to='/about'>About.</NavListA>
+            <NavListA to='/about' onClick={() => setOpen(!open)}>About</NavListA>
         </NavListLi>
         <NavListLi>
-            <NavListA to='/contact'>Contact.</NavListA>
+            <NavListA to='/contact' onClick={() => setOpen(!open)}>Contact</NavListA>
         </NavListLi>
     </NavList>
     );

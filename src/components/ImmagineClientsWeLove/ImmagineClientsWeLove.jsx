@@ -1,11 +1,13 @@
 import React from 'react';
-import ClientsWeLove from '../../assets/clientswelove.webp';
+import './ImmagineClientsWeLove.css';
 
-
-const ImmagineClientsWeLove = () => (
-    <div className="container">
-	    <img src={ClientsWeLove} alt="Clients We Love" loading="eager"/>
-	</div>
-);
+function ImmagineClientsWeLove() {
+    return (
+        <div className='clients-contenitore'>
+            <h1>Clients</h1>
+            <h4>A genuine bond to clients from all walks of business</h4>
+        </div>
+    );
+}
 
 export default ImmagineClientsWeLove;

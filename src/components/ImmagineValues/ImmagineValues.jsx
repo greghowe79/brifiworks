@@ -1,11 +1,13 @@
 import React from 'react';
-import Values from '../../assets/values.webp';
+import './ImmagineValues.css';
 
-
-const ImmagineValues = () => (
-    <div className="container">
-	    <img src={Values} alt="Values" loading="eager"/>
-	</div>
-);
+function ImmagineValues() {
+    return (
+        <div className='values-contenitore'>
+            <h1>Our values</h1>
+            <h4>Authenticity, integrity and inclusion in all that we do</h4>
+        </div>
+    );
+}
 
 export default ImmagineValues;

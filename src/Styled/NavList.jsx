@@ -5,7 +5,7 @@ export const NavList = styled.ul`
     align-items: center;
     
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1024px) {
         flex-direction: column;
         background-color: #000;
         position: fixed;

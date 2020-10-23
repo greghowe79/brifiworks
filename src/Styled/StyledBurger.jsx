@@ -11,7 +11,7 @@ export const StyledBurger = styled.div`
     display: none;
     
     
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1024px) {
         display: flex;
         justify-content: space-around;
         flex-direction: column;  
@@ -21,7 +21,7 @@ export const StyledBurger = styled.div`
     div {
         width: 2rem;
         height: 0.25rem;
-        background-color: ${({ open }) => open ? '#ccc' : '#333'};
+        background-color: ${({ open }) => open ? '#fff' : '#fff'};
         border-radius: 10px;
         transform-origin: 1px;
         transition: all 0.3s linear;

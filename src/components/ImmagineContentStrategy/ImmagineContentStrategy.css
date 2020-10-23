@@ -1,0 +1,252 @@
+.contentstrategy-contenitore {
+    background: url('../../assets/contentstrategy.jpg') center center/cover
+    no-repeat;
+    height: 100vh;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 000 100vh rgba(0, 0, 0, 0.3);
+    object-fit: contain;
+}
+
+.contentstrategy-contenitore > h1 {
+    font-family: 'lato';
+} 
+
+@media screen and (max-width: 450px) and (min-width: 280px) { 
+    .contentstrategy-contenitore {
+      background: url('../../assets/contentstrategymobile.jpg')center center/cover
+      no-repeat;
+      width: 100%;
+      height: 100vh;
+      object-fit: contain;
+      box-shadow: inset 000 100vh rgba(0, 0, 0, 0.3);
+    }
+  }
+
+@media (max-width: 1023px) {
+    .contentstrategy-contenitore > h1 {
+        color: #ffffff;
+        font-size: 46px;
+        font-weight: 500;
+        letter-spacing: 0px;
+        width: 100%;
+        text-align: center;
+        line-height: 1.2; 
+        padding: 0 0 5px; 
+        margin: 0;
+    }
+
+    .contentstrategy-contenitore > h4 {
+        font-size: 18.5px;
+        font-family: 'lato';
+        font-weight:100;
+        color: #ffffff;
+        line-height: 1.618;
+        letter-spacing: 1px;
+        width: 100%;
+        text-align: center;
+        padding: 1% 18% 0;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 568px) {
+    .contentstrategy-contenitore > h1 {
+        color: #ffffff;
+        font-size: 46px;
+        font-weight: 500;
+        letter-spacing: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 1.2; 
+        padding: 0 0 5px;  
+        margin: 0;
+    }
+    
+    .contentstrategy-contenitore > h4 {
+        font-size: 18.5px;
+        font-family: 'lato';
+        font-weight:100;
+        color: #ffffff;
+        line-height: 1.618;
+        letter-spacing: 1px;
+        width: 100%;
+        text-align: center;
+        padding: 6% 8% 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    .contentstrategy-contenitore > h1 {
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 1.2; 
+        padding: 0 0 5px;  
+        margin: 0;
+    }
+    
+    .contentstrategy-contenitore >  h4{
+        font-size: 18px;
+        font-family: 'lato';
+        font-weight:100;
+        color: #ffffff;
+        line-height: 1.618;
+        letter-spacing: 1px;
+        width: 100%;
+        text-align: center;
+        padding: 2% 8% 0;
+        margin: 0;
+    }
+    }
+
+    @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+        .contentstrategy-contenitore > h1 {
+            color: #ffffff;
+            font-size: 42px;
+            font-weight: 500;
+            letter-spacing: 0;
+            width: 100%;
+            text-align: center;
+            line-height: 1.2; 
+            padding: 0 0 5px;  
+            margin: 0;
+        }
+        
+        .contentstrategy-contenitore > h4 {
+            font-size: 17px;
+            font-family: 'lato';
+            font-weight:100;
+            color: #ffffff;
+            line-height: 1.618;
+            letter-spacing: 1px;
+            width: 100%;
+            text-align: center;
+            padding: 6% 8% 0;
+            margin: 0;
+        }
+    }
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+        .contentstrategy-contenitore {
+            background: url('../../assets/contentstrategytablet.jpg')center center/cover
+            no-repeat;
+            width: 100%;
+            height: 100vh;
+            object-fit: contain;
+            box-shadow: inset 000 100vh rgba(0, 0, 0, 0.3);
+          }
+        
+        .contentstrategy-contenitore > h1 {
+            color: #ffffff;
+            font-size: 62px;
+            font-weight: 500;
+            letter-spacing: 0;
+            width: 100%;
+            text-align: center;
+            line-height: 1.2; 
+            padding: 0 0 5px;  
+            margin: 0;
+        }
+        
+        .contentstrategy-contenitore > h4 {
+            font-size: 23px;
+            font-family: 'lato';
+            font-weight:100;
+            color: #ffffff;
+            line-height: 1.618;
+            letter-spacing: 1px;
+            width: 100%;
+            text-align: center;
+            padding: 2% 8% 0;
+            margin: 0;
+        }
+        }
+
+@media (min-width: 768px) and (max-width:1024px) and (orientation:portrait){
+    .contentstrategy-contenitore > h1 {
+        color: #ffffff;
+        font-size: 70px;
+        font-weight: 500;
+        letter-spacing: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 1.4; 
+        padding: 0 20px 5px;  
+        margin: 0;
+    }
+    
+    .contentstrategy-contenitore > h4 {
+        font-size: 25px;
+        font-family: 'lato';
+        font-weight:100;
+        color: #ffffff;
+        line-height: 1.618;
+        letter-spacing: 2px;
+        width: 100%;
+        text-align: center;
+        padding: 1% 13% 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 1399px) and (min-width: 1024px) {
+    .contentstrategy-contenitore > h1 {
+        color: #ffffff;
+        font-size: 85px;
+        font-weight: 500;
+        letter-spacing: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 1.1; 
+        padding: 0 20px 25px;  
+        margin: 0;
+    }
+    
+    .contentstrategy-contenitore > h4 {
+        font-size: 30px;
+        font-family: 'lato';
+        font-weight:100;
+        color: #ffffff;
+        line-height: 1.618;
+        letter-spacing: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1% 22% 0;
+        margin: 0;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .contentstrategy-contenitore > h1 {
+        color: #ffffff;
+        font-size: 90px;
+        font-family: 'lato';
+        font-weight: 100;
+        letter-spacing: -2px;
+        width: 100%;
+        text-align: center;
+        padding: 0;  
+        line-height: 1.618; 
+    }
+    
+    .contentstrategy-contenitore > h4 {
+        font-size: 32px;
+        font-family: 'lato';
+        font-weight:100;
+        color: #ffffff;
+        letter-spacing: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        line-height: 1.618;
+    }
+}

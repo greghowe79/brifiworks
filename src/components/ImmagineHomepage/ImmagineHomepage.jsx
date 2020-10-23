@@ -1,12 +1,12 @@
 import React from 'react';
-import homepage from '../../assets/homepage.webp';
-
-
-
-const ImmagineHomepage = () => (
-    <div className="container">
-	    <img src={homepage} alt="Brifiworks" loading="eager"/>
-	</div>
-);
+import './immaginehomepage.css';
+function ImmagineHomepage() {
+    return (
+        <div className='homepage-contenitore'>
+                <h1>Crafting content that matters</h1>
+                <h4>Consulting services on content strategy, storytelling and marketing</h4>
+        </div>
+    );
+}
 
 export default ImmagineHomepage;

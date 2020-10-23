@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const NavListLi = styled.li`
-    line-height: 8rem;
-    position: relative;
+    line-height: 7rem;
+	position: relative;
+	padding-top: 20px;
 
     &:hover {
 			& > .SubMenu {

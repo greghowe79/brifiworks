@@ -6,11 +6,7 @@ import TestoContentStrategy from '../../components/TestoContentStrategy/TestoCon
 
 
     const ContentStrategy = () => (
-        <div style={{height: '100%'}}>
-            <main className="main">
-                <h2 className='titolo-pagina'>Content strategy</h2>
-                <p>Not just content, but an inclusive approach to support our customers' goals</p>
-            </main>
+        <div>
             <ImmagineContentStrategy />
             <CitazioneContentStrategy />
             <TestoContentStrategy />

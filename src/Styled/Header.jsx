@@ -6,5 +6,7 @@ export const Header = styled.header`
     top: 0;
     right: 0;
     font-family: 'lato';
-    background-color: #FFFFFF;
+    background-color: transparent;
+    z-index:4000;
+    
 `;

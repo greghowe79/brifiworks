@@ -3,41 +3,60 @@ import { Link } from 'react-router-dom';
 
 export const NavListA = styled(Link)`
     display: block;
-    color: #1d1d1f;
-    padding: 0 1.6rem;
-    font-size: 1.1rem;
+    color: #ffffff;
+    padding: 0;
+    margin: 0 15px;
+    font-size: 16px;
     text-transform: uppercase;
     transition: color 650ms;
     text-decoration:none;
+    font-family: 'lato';
+    font-weight: 500;
+    letter-spacing: 0.5px;
 
     &:hover {
-        color: #257d8a;
+        display:inline-block;
+        position: relative;
     }
 
-    @media screen and (max-width: 1513px) {
-        font-size: 1.2rem;
-        padding: 0 1rem;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scale(0);
+        height: 0.8px;
+        bottom: 40px;
+        left: 0;
+        background-color: white;
+        transform-origin: bottom right;
+        transition: transform 0.45s ease-out;
     }
 
-    @media screen and (max-width: 1370px) {
-        font-size: 1.2rem;
-        padding: 0 1rem;
+    &:hover::before {
+        transform: scale(1);
+        transform-origin: bottom left;
     }
 
-    @media screen and (max-width: 1242px) {
-        font-size: 1.1rem;
-        padding: 0 1rem;
-    }
 
+   
 
 
     @media screen and (max-width: 1000px) {
     display: block;
     color: #fff;
-    padding: 0 1.6rem;
-    font-size: 1.3rem;
+    padding: 0;
+    margin: 0 15px;
+    font-size: 16px;
     text-transform: uppercase;
     transition: color 650ms;
     text-decoration:none;
+
+    &::before {
+        background-color: black;
+    }
+
+    &:hover {
+       color:rgb(0, 255, 255);
+    }
     }
 `;

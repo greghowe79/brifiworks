@@ -1,11 +1,15 @@
 import React from 'react';
-import ContentStrategy from '../../assets/contentstrategy.webp';
+import './ImmagineContentStrategy.css';
 
 
-const ImmagineContentStrategy = () => (
-    <div className="container">
-	    <img src={ContentStrategy} alt="Content Strategy" loading="eager"/>
-	</div>
-);
+function ImmagineContentStrategy() {
+    return (
+        <div className='contentstrategy-contenitore'>
+            <h1>Content strategy</h1>
+            <h4>Not just content, but an inclusive approach to support the clients' goals</h4>
+        </div>
+    );
+}
 
 export default ImmagineContentStrategy;
+
