@@ -9,6 +9,10 @@ import ErrorBoundary from './components/error-boundary/error-boundary.component'
 import ReactGa from 'react-ga';
 import './App.css';
 
+import Alert from 'react-s-alert';
+import './components/sign-up/s-alert-default.css';
+import 'react-s-alert/dist/s-alert-css-effects/scale.css';
+
 const HomePage = lazy(() => import('./pagine/homepage/HomePage'));
 const Competencies = lazy(() => import('./pagine/Competencies/Competencies'));
 const ContentStrategy = lazy(() => import('./pagine/ContentStrategy/ContentStrategy'));
@@ -29,6 +33,8 @@ function App() {
   
     return (
       <Router>
+
+        <Alert stack={{limit: 3}} />
         <CookieConsent
           location="bottom"
           buttonText="Accept"

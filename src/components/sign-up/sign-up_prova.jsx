@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import { Formik } from 'formik';
 import FormInput from '../form-input/form-input';
 import CustomButton from '../custom-button/custom-button';
-import * as Yup from 'yup'; 
+import * as Yup from 'yup';
+import {firestore} from '../../firebase/firebase.utils';
 import 'firebase/firestore';
 import './sign-up.styles.scss';
-import {contactRequest} from '../util/APIUtil'; 
+import {contactRequest, provaRequest} from '../util/APIUtil';
 
 
 
@@ -66,7 +67,7 @@ class SignUp extends Component {
                     validationSchema={this.validationSchema}
                     onSubmit={(values, {setSubmitting, resetForm}) => {
                         
-                     /* INIZIO FORM NUOVO   */
+                     /* INIZIO FORM NUOVO   
                         const dataform =
                         Object.assign({}, 
                             {   
@@ -78,15 +79,36 @@ class SignUp extends Component {
                             
                         });
                         
-                        contactRequest(dataform)
-                        setSubmitting(true);
-                        resetForm();
-                        setSubmitting(false);
-
-                        /* 
-                        POPUP
-                        */
-                       
+                    /*{
+                            firstname: values.firstName,
+                            lastname: values.lastName,
+                            company: values.company,
+                            email: values.email,
+                            message: values.textArea1
+                        };
+                        alert(JSON.stringify(dataform));
+                        contactRequest(JSON.stringify(dataform))
+        .then(response => { alert(JSON.stringify(response));
+        }).catch(error => {
+                
+        }); FINE FORM NUOVO*/
+                        
+                        setTimeout(() => {
+                            const db = firestore;
+                            db.collection('users').add({
+                            firstName: values.firstName,
+                            lastName: values.lastName,
+                            company: values.company,
+                            email: values.email,
+                            textArea1: values.textArea1
+                            }
+                            
+                            ); 
+                            
+                            setSubmitting(true)
+                            resetForm();
+                            setSubmitting(false);
+                        }, 400);
                     }}
                 >
 
