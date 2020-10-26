@@ -5,27 +5,43 @@ import { Container } from '../../Styled/Container';
 import { Navigation } from '../../Styled/Navigation';
 import { Logo } from '../../Styled/Logo';
 import Burger from '../../components/Burger';
-import './Nav.css';
+import './Nav.css';  
+import { withRouter } from "react-router-dom";
 
 
 
 
+class Navbar extends React.Component{
 
 
-function Navbar  ({ currentUser })  {
-    const [navbar, setNavbar] = useState(false);
-    const changeBackground = () => {
-        if(window.scrollY >=90) {
-            setNavbar(true)
-        } else {
-            setNavbar(false);
-        }
+    changeBackground = () => {
+        if(!this.state.navbar &&  ( this.props.location.pathname === '/privacy-policy'
+        || this.props.location.pathname === '/terms-of-service' || (window.scrollY >=90) ) ) 
+            this.setState({ navbar: true });
+        else if(window.scrollY < 90 && this.state.navbar &&  this.props.location.pathname !== '/privacy-policy'
+        && this.props.location.pathname !== '/terms-of-service')
+            this.setState({ navbar: false });
+        
     };
 
-    window.addEventListener('scroll', changeBackground);
-    return (
+    constructor(props) {
+        super(props);
+        const activeBar = this.props.location.pathname === '/privacy-policy'
+        || this.props.location.pathname === '/terms-of-service';
+        this.state = {
+            navbar: activeBar}; 
+        window.addEventListener('scroll', this.changeBackground); 
+        }
+
+    componentDidUpdate() {
+         this.changeBackground();
+      } 
+ 
+
+    render(){
+        return (
         <div>
-            <Header className={navbar ? 'header active' : 'header'}>
+            <Header className={this.state.navbar ? 'header active' : 'header'}>
                 <Container>
                     <Navigation>
                         <Logo to='/'>
@@ -39,7 +55,10 @@ function Navbar  ({ currentUser })  {
             </Header>
            
         </div>
-    );
+    );}
+
+   // window.addEventListener('scroll', changeBackground);
+    
 }
 
-export default Navbar;
+export default withRouter(Navbar);
