@@ -121,6 +121,7 @@
     left: 0;
     right: 0;
     top: auto;
+    text-align: center;
 }
 .s-alert-top {
     width: 100%;

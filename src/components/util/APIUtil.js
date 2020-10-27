@@ -13,29 +13,28 @@ export function contactRequest(data) {
     url,
     };
     axios(options).then(function (response) {
-        
-        Alert.success("........", {
-            position: 'bottom-right',
-            effect: 'scale',
-            onShow: function () {
-                
-            },
-            beep: false,
-            timeout: 'none',
-            offset: 100
-        })
-      })
-      .catch(function (error) {
-        Alert.error("Error", {
-            position: 'bottom-right',
-            effect: 'scale',
-            onShow: function () {
-                
-            },
-            beep: false,
-            timeout: 'none',
-            offset: 100
-        })  
-      });
- 
+       
+      Alert.success("Thank you for contacting Brifiworks. We have received your request and we will get back to you shortly.", {
+        position: 'bottom',
+        effect: 'scale',
+        onShow: function () {
+            
+        },
+        beep: false,
+        timeout: 'none',
+        offset: 100
+    })
+  })
+  .catch(function (error) {
+    Alert.error("Error", {
+        position: 'bottom',
+        effect: 'scale',
+        onShow: function () {
+            
+        },
+        beep: false,
+        timeout: 'none',
+        offset: 100
+    })  
+  });
 }
