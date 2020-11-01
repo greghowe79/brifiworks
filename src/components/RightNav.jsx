@@ -34,7 +34,7 @@ const RightNav = ({ open, setOpen }) => {
             <NavListA to='/values' onClick={() => setOpen(!open)}>Values</NavListA>
         </NavListLi>
         <NavListLi>
-        <a className='articles' href='https://www.linkedin.com/pulse/5-reasons-why-storytelling-crucial-success-businesses-claudia-mosca/?trackingId=yAIiVnS1URuRdeemJj0PuQ%3D%3D' rel="noopener noreferrer">Articles</a>
+        <a className='articles' href='https://www.brifiworks.com/articles' rel="noopener noreferrer">Articles</a>
         </NavListLi>
         <NavListLi>
             <NavListA to='/about' onClick={() => setOpen(!open)}>About</NavListA>
