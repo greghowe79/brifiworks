@@ -15,7 +15,44 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.54);
 }
 
+.intestazione {
+  font-family: 'lato';
+  text-align: center;
+  color: #1d1d1f;
+  font-size: 40px;
+}
+.newsletter-button {
+    min-width: 100%;
+    width: auto;
+    height: 50px;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    padding: 0 35px 0 35px;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #bfa18f;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: "lato";
+    font-weight: 100;
+    border: none;
+    cursor: pointer;
+}
 
+.newsletter-button:hover {
+  color: white;
+  background-color:#bfa18f;
+  border: 1px solid white;
+}
+
+
+.newsletter-button:focus{
+  box-shadow: 0 0 2pt 1pt rgb(255, 255, 255, .6);
+  outline: none;
+  color: white;
+  background-color:#bfa18f;
+  border: 1px solid white;
+  }
 
 .ul li {
     line-height: 1.8;

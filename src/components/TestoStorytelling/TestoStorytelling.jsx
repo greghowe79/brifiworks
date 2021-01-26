@@ -8,7 +8,7 @@ const TestoStorytelling= () => (
           <h2>Why Do We Need Stories?</h2>
       </div>
       <div className="paragrafo">
-      Storytelling belongs to the very nature of the human being. For centuries it has been used in literature, theatre, cinema, and many other narrative outlets with the objective to inform, entertain, instil moral values, educate, and, more generically, to elevate our souls.
+      Storytelling belongs to the very nature of the human being. For centuries it has served literature, theatre, cinema, and many other narrative outlets with the objective to inform, entertain, instil moral values, educate, and, more generically, to elevate our souls.
       </div>
       <div className="paragrafo">
       In business, as well as in non-profits, storytelling is a powerful way to connect to a targeted audience in a manner that resonates at an emotional level, but also to turn a chaotic bundle of information into something more coherent, where the story arc gives direction as the reader is led from one idea to the next. The craft of telling stories leads an audience to identify with the situation described; it helps to familiarise a brand and creates an unbreakable bond of trust that brings the audience to engage, support, and promote the information or message further.
