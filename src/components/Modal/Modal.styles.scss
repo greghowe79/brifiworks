@@ -1,15 +1,91 @@
-
+$bg: #fff;
+$text: #382b22;
+$light-pink: #fff0f0;
+$pink: #ffe9e9;
+$dark-pink: #f9c4d2;
+$pink-border: #b18597;
+$pink-shadow: #ffe3e2;
 
 .modal {
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0,0,0,.3);
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    form {
+      padding: 0 20px;
+
+      .input-group {
+        display: flex;
+
+        input[type="checkbox"] {
+          margin-top: -3px;
+          margin-right: 5px; 
+          cursor: pointer;
+          width: 32px;
+          height: 32px;
+        }
+
+        span {
+          font-size: 14px;
+          color: rgba(0,0,0,.3);
+        }
+      }
+
+      div {
+        &:first-child {
+          display: flex;
+          flex-direction: column;
+
+          input[type="email"] {
+            display: inline-block;
+            width: 100%;
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px dashed #cacaca;
+            outline: none;
+            font-size: 20px;
+            font-weight: 400;
+            transition: all 0.2s ease;
+            border-radius: 0.75em;
+            margin-bottom: 0px;
+
+            &:focus {
+              border-color: #1d1d1f; 
+            }
+          }
+
+          button {
+            cursor: pointer;
+            display: inline-block;
+            width: 150px;
+            background: #bfa18f;
+            border: none;
+            margin: 20px 0;
+            padding: 10px 5px;
+            outline: none;
+            font-size: 20px;
+            font-weight: 400;
+            transition: all 0.2s ease;
+            border-radius: 0.75em;
+
+            &:hover {
+              border-color: #1d1d1f;
+            }
+          }
+        }
+      }
+    }
+  }
 
   
 
@@ -20,7 +96,6 @@
     height: 50%;
     border-radius: 4px;
     position: fixed;
-    margin-top:80px;
     
     .close {
       background-color: transparent;
