@@ -96,6 +96,8 @@ $pink-shadow: #ffe3e2;
     height: 50%;
     border-radius: 4px;
     position: fixed;
+
+   
     
     .close {
       background-color: transparent;
@@ -127,11 +129,13 @@ $pink-shadow: #ffe3e2;
   }
 }
 
+
 $breakpoint-mobile: 475px;
 @media (max-width: $breakpoint-mobile) {
   .modal{
     .scatola {
       width: 300px;
+      height: 65%;
     }
   } 
 }
