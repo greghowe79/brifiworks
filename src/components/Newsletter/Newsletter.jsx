@@ -36,15 +36,15 @@ class Newsletter extends Component {
 
   render() {
     return (
-        <>
-          <form>
-            <MailchimpSubscribe url={this.state.url} />
-            <div className="input-group">
-              <input type="checkbox" />
-              <span>By clicking "subscribe," you agree to receive Brifiworks' newsletter and accept our web terms of use and privacy and cookie policy.</span>
-            </div>
-          </form>
-        </>
+      <>
+        <form>
+          <MailchimpSubscribe url={this.state.url} />
+          <div className="input-group">
+            <input type="checkbox" />
+            <span>By clicking "subscribe", you agree to receive Brifiworks' newsletter and accept our web terms of use and privacy and cookie policy.</span>
+          </div>
+        </form>
+      </>
       // <div className='sign-up'>
       //   <Formik
       //     initialValues={{

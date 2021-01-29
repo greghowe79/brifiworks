@@ -126,3 +126,9 @@ $pink-shadow: #ffe3e2;
     }
   }
 }
+
+@media only screen and (max-width: 475px) {
+  .modal .scatola {
+    width: 300px;
+  }
+}
