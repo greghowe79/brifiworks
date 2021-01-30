@@ -1,0 +1,9 @@
+$breakpoint-mobile: 475px;
+@media (max-width: $breakpoint-mobile) {
+  .modal{
+    .scatola {
+      width: 300px;
+      height: 65%;
+    }
+  } 
+}
