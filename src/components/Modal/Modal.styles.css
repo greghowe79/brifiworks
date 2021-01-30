@@ -1,0 +1,7 @@
+
+@media (max-width: 475px) {
+  .modal .scatola{
+      width: 90vw;
+      height: 60%;
+  } 
+}
